@@ -1,5 +1,5 @@
- function uploadShifts() {  
-    var fileUpload = document.getElementById("shifts");  
+ function uploadCSVFile() {  
+    var fileUpload = document.getElementById("csvfile");  
     var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;  
     if (regex.test(fileUpload.value.toLowerCase())) {  
         if (typeof(FileReader) != "undefined") {  
@@ -16,7 +16,7 @@
                         cell.innerHTML = cells[j];  
                     }  
                 }  
-                var dvCSV = document.getElementById("shiftsTable");  
+                var dvCSV = document.getElementById("csvFileTable");  
                 dvCSV.innerHTML = "";  
                 dvCSV.appendChild(table);  
             }  
