@@ -28,4 +28,4 @@
         alert("Please upload a valid CSV file.");  
     }  
 } 
-</script>  
+
